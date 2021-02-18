@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    padding: 10px;
+    height: 90vh;
+    overflow: hidden;
+    background: linear-gradient(to right,rgba(44, 231, 30, 0.651), rgb(20, 20, 5)), url("https://images.unsplash.com/photo-1581397867105-8c988bd747e6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+}
+
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav h1 a{
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+
+header nav ul li a{
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+header nav ul button{
+    text-decoration: none;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    width: 100px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+header nav ul button:hover{
+    border: 2px solid #369F39;
+    color: #369F39;
+}
+
+header .section-a{
+    width: 80%;
+    height: 75vh;
+    line-height: 75vh;
+    margin: auto;
+    text-align: right;
+}
+
+header .section-a span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+header .section-a .content-a h2{
+    color: #fff;
+    font-size: 80px;
+}
+
+header .section-a .content-a p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 0 20px 0;
+}
+
+header .section-a .content-a .content-btn{
+    color: #fff;
+    font-size: 15px;
+    background: #369F39;
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    transform: skew(-15deg);
+    display: inline-block;
+}
+
+header .section-a .content-a .content-btn:hover{
+    background: #fff;
+    color: #369F39;
+}
+
+header .section-a .content-a .content-btn i{
+    padding: 0 5px 0 5px;
+}
+
+main .section-b{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
