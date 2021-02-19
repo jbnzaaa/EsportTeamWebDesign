@@ -116,74 +116,310 @@ header .section-a .content-a .content-btn i{
 
 main .section-b{
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
 }
 
-main .section-b .content-b .sc-sec-1 h1{
+main .section-b .content-b h1{
     font-size: 30px;
     text-align: center;
     padding: 10px;
     letter-spacing: 20px;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list{
+main .section-b .content-b .gameplay-list{
     width: 80%;
     margin: auto;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-a{
-    width: 100%;
+main .section-b .content-b .gameplay-list .gl-a{
+    width: 85%;
+    height: 35vh;
+    float: left;
     margin: 10px;
     display: flex;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-a .gl-l{
+main .section-b .content-b .gameplay-list .gl-a .gl-l{
     background: blue;
     width: 50%;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-a .gl-l img{
+main .section-b .content-b .gameplay-list .gl-a .gl-l img{
     width: 100%;
     height: 100%;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-a .gl-r{
+main .section-b .content-b .gameplay-list .gl-a .gl-r{
     background: rgb(236, 236, 236);
-    padding: 10px;
+    padding: 15px;
     width: 50%;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-b{
-    width: 100%;
+main .section-b .content-b .gameplay-list .gl-a .gl-r button{
+    border: 2px solid #D60404;
+    color: #D60404;
+    padding: 10px;
+    cursor: pointer;
+}
+
+main .section-b .content-b .gameplay-list .gl-b{
+    width: 85%;
+    height: 35vh;
+    float: right;
     margin: 10px;
     display: flex;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-b .gl-l{
+main .section-b .content-b .gameplay-list .gl-b .gl-l{
     background: blue;
     width: 50%;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-b .gl-l img{
+main .section-b .content-b .gameplay-list .gl-b .gl-l img{
     width: 100%;
     height: 100%;
 }
 
-main .section-b .content-b .sc-sec-1 .gameplay-list .gl-b .gl-r{
+main .section-b .content-b .gameplay-list .gl-b .gl-r{
     background: rgb(236, 236, 236);
-    padding: 10px;
+    padding: 15px;
     width: 50%;
+}
+
+main .section-b .content-b .gameplay-list .gl-b .gl-r button{
+    border: 2px solid #D60404;
+    color: #D60404;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /*main section c / roster section*/
 
 main .section-c{
-    width: 80%;
-    height: 70vh;
-    margin: auto;
-    background: red;
+    height: 80vh;
 }
+
+main .section-c .content-c{
+    width: 80%;
+    margin: auto;
+}
+
+main .section-c .content-c h1{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 20px;
+}
+
+main .section-c .content-c .teams-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+}
+
+main .section-c .content-c .teams-list .team-a{
+    background: #EBEBE8;
+    height: 100%;
+    color: #D60404;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .section-c .content-c .teams-list .team-a .img{
+    width: 120%;
+    transform: skewY(-5deg);
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-a .img img{
+    width: 100%;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-a .content{
+    position: relative;
+    padding: 20px;
+    text-align: right;
+}
+
+main .section-c .content-c .teams-list .team-a .content i{
+    display: flex;
+    position: absolute;
+}
+
+main .section-c .content-c .teams-list .team-a .content h4{
+    color: #000;
+    padding: 5px 0 5px 0;
+}
+
+main .section-c .content-c .teams-list .team-a .content button{
+    padding: 8px;
+    border: 2px solid #D60404;
+    background: transparent;
+    outline: none;
+    color: #D60404;
+}
+
+main .section-c .content-c .teams-list .team-a .content #highlight{
+    padding: 8px;
+    background: #D60404;
+    outline: none;
+    color: #fff;
+}
+
+main .section-c .content-c .teams-list .team-b{
+    background: #EBEBE8;
+    height: 100%;
+    color: #D60404;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .section-c .content-c .teams-list .team-b .img{
+    width: 120%;
+    transform: skewY(-5deg);
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-b .img img{
+    width: 100%;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-b .content{
+    position: relative;
+    padding: 20px;
+    text-align: right;
+}
+
+main .section-c .content-c .teams-list .team-b .content i{
+    display: flex;
+    position: absolute;
+}
+
+main .section-c .content-c .teams-list .team-b .content h4{
+    color: #000;
+    padding: 5px 0 5px 0;
+}
+
+main .section-c .content-c .teams-list .team-b .content button{
+    padding: 8px;
+    border: 2px solid #D60404;
+    background: transparent;
+    outline: none;
+    color: #D60404;
+}
+
+main .section-c .content-c .teams-list .team-b .content #highlight{
+    padding: 8px;
+    background: #D60404;
+    outline: none;
+    color: #fff;
+}
+
+main .section-c .content-c .teams-list .team-c{
+    background: #EBEBE8;
+    height: 100%;
+    color: #D60404;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main .section-c .content-c .teams-list .team-c .img{
+    width: 120%;
+    transform: skewY(-5deg);
+    margin-top: -20px;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-c .img img{
+    width: 100%;
+    overflow: hidden;
+}
+
+main .section-c .content-c .teams-list .team-c .content{
+    position: relative;
+    padding: 20px;
+    text-align: right;
+}
+
+main .section-c .content-c .teams-list .team-c .content i{
+    display: flex;
+    position: absolute;
+}
+
+main .section-c .content-c .teams-list .team-c .content h4{
+    color: #000;
+    padding: 5px 0 5px 0;
+}
+
+main .section-c .content-c .teams-list .team-c .content button{
+    padding: 8px;
+    border: 2px solid #D60404;
+    background: transparent;
+    outline: none;
+    color: #D60404;
+}
+
+main .section-c .content-c .teams-list .team-c .content #highlight{
+    padding: 8px;
+    background: #D60404;
+    outline: none;
+    color: #fff;
+}
+
+/*main section d / event section*/
+
+main .section-d{
+    height: 80vh;
+}
+
+main .section-d .content-d{
+    width: 80%;
+    margin: auto;
+}
+
+main .section-d .content-d h1{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 20px;
+}
+
+main .section-d .content-d .events-list{
+    width: 80%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+main .section-d .content-d .events-list .event{
+    background: #EBEBE8;
+    border-left: 4px solid #D60404;
+    margin: 10px 0 10px 0;
+    display: flex;
+    line-height: 40px;
+}
+
+main .section-d .content-d .events-list .event #date{
+    padding: 10px;
+    width: 25%;
+}
+
+main .section-d .content-d .events-list .event #description{
+    width: 75%;
+    padding: 10px;
+}
+
+/*footer*/
 
 footer{
     background: #369F39;
