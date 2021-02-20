@@ -10,7 +10,7 @@
 
 header{
     padding: 10px;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
     background: linear-gradient(to right,rgba(20, 20, 5, 0.651), rgb(20, 20, 5)), url("https://wallpapercave.com/wp/wp1856464.png");   
 }
@@ -39,66 +39,68 @@ header nav ul li{
 }
 
 header nav ul li a{
-    padding: 0 20px 0 20px;
+    padding: 0 25px 0 25px;
     text-decoration: none;
     color: #fff;
     font-size: 15px;
-    margin-top: 100px;
 }
 
-header nav ul #special{
+header nav #special{
     text-decoration: none;
-    padding: 5px;
-    background: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    padding: 5px 20px 5px 20px;
+    background: #fff;
+    border-radius: 50px;
+    color: #D60404;
     outline: none;
     cursor: pointer;
 }
 
-header nav ul #special:hover{
-    border: 2px solid #D60404;
-    color: #D60404;
+header nav #special:hover{
+    background: #D60404;
+    color: #fff;
 }
 
 header .section-a{
     width: 80%;
-    height: 75vh;
-    line-height: 75vh;
     margin: auto;
-    text-align: right;
-    position: relative;
 }
 
-header .section-a span{
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
+header .section-a .content-a{
+    text-align: right;
+    width: 50%;
+    float: right;
+    margin-top: 180px;
+}   
 
 header .section-a .content-a h2{
     color: #fff;
-    font-size: 80px;
-}
-
-header .section-a .content-a h2 span{
-    color: #fff;
+    font-size: 40px;
+    width: 100%;
+    float: right;
+    padding: 0 0 15px 0;
 }
 
 header .section-a .content-a p{
     color: #fff;
-    font-size: 18px;
-    padding: 0 0 20px 0;
+    font-size: 15px;
+    padding: 0 0 15px 0;
 }
 
-header .section-a .content-a .content-btn{
+header .section-a .content-a h1 span{
+    color: #D60404;
+}
+
+header .section-a .content-a .btns{
+    padding: 0 0 15px 0;
+}
+
+header .section-a .content-a .btns .content-btn{
     color: #fff;
     font-size: 15px;
     background: #D60404;
     border: none;
     padding: 10px;
     text-decoration: none;
-    transform: skew(-15deg);
     display: inline-block;
 }
 
@@ -114,30 +116,55 @@ header .section-a .content-a .content-btn i{
 /*Main*/
 /*main section b / gameplay section*/
 
+main{
+    background: #f3f3f3;
+}
+
+main .sponsor{
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .sponsor .sponsor-list{
+    text-align: center;
+    padding: 10px;
+}
+
 main .section-b{
     width: 80%;
-    height: 90vh;
+    height: 100vh;
     margin: auto;
+}
+
+main .section-b .content-b{
+    padding: 30px 0;
 }
 
 main .section-b .content-b h1{
     font-size: 30px;
     text-align: center;
     padding: 10px;
-    letter-spacing: 20px;
+    letter-spacing: 25px;
+}
+
+main .section-b .content-b h1 span{
+    color: #D60404;
 }
 
 main .section-b .content-b .gameplay-list{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 main .section-b .content-b .gameplay-list .gl-a{
-    width: 85%;
+    width: 80%;
     height: 35vh;
-    float: left;
-    margin: 10px;
+    margin: 25px auto;
     display: flex;
+    border-left: 5px solid #D60404;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -153,13 +180,22 @@ main .section-b .content-b .gameplay-list .gl-a .gl-l img{
 
 main .section-b .content-b .gameplay-list .gl-a .gl-r{
     background: rgb(236, 236, 236);
-    padding: 15px;
+    padding: 30px;
     width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+main .section-b .content-b .gameplay-list .gl-a .gl-r p{
+    padding: 10px 0;
+    font-size: 15px;
+}
+
 
 main .section-b .content-b .gameplay-list .gl-a .gl-r button{
     border: 2px solid #D60404;
     color: #D60404;
+    width: 30%;
     padding: 10px;
     cursor: pointer;
 }
@@ -172,11 +208,11 @@ main .section-b .content-b .gameplay-list .gl-a .gl-r button:hover{
 }
 
 main .section-b .content-b .gameplay-list .gl-b{
-    width: 85%;
+    width: 80%;
     height: 35vh;
-    float: right;
-    margin: 10px;
+    margin: 25px auto;
     display: flex;
+    border-left: 5px solid #D60404;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -192,13 +228,21 @@ main .section-b .content-b .gameplay-list .gl-b .gl-l img{
 
 main .section-b .content-b .gameplay-list .gl-b .gl-r{
     background: rgb(236, 236, 236);
-    padding: 15px;
+    padding: 30px;
     width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .section-b .content-b .gameplay-list .gl-b .gl-r p{
+    padding: 10px 0;
+    font-size: 15px;
 }
 
 main .section-b .content-b .gameplay-list .gl-b .gl-r button{
     border: 2px solid #D60404;
     color: #D60404;
+    width: 30%;
     padding: 10px;
     cursor: pointer;
 }
@@ -213,206 +257,126 @@ main .section-b .content-b .gameplay-list .gl-b .gl-r button:hover{
 /*main section c / roster section*/
 
 main .section-c{
-    height: 70vh;
+    height: 80vh;
     background: #EBEBE8;
 }
 
 main .section-c .content-c{
-    width: 80%;
+    width: 70%;
     margin: auto;
+    padding: 30px 0;
 }
 
 main .section-c .content-c h1{
-    color: #000;
     font-size: 30px;
     text-align: center;
     padding: 10px;
-    letter-spacing: 20px;
+    letter-spacing: 25px;
+}
+
+main .section-c .content-c h1 span{
+    color: #D60404;
 }
 
 main .section-c .content-c .teams-list{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 15px;
+   padding: 20px 0 0 0;
 }
 
-main .section-c .content-c .teams-list .team-a{
+main .section-c .content-c .teams-list .team{
     background: #EBEBE8;
     height: 100%;
     color: #D60404;
     display: block;
     overflow: hidden;
+    transform: skew(-5deg);
+    display: grid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-main .section-c .content-c .teams-list .team-a .img{
+main .section-c .content-c .teams-list .team h4{
+    color: #000;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    transform: skew(5deg);
+}
+
+main .section-c .content-c .teams-list .team span{
+    color: #D60404;
+}
+
+main .section-c .content-c .teams-list .team .img{
     width: 120%;
     transform: skewY(-5deg);
-    margin-top: -20px;
     overflow: hidden;
 }
 
-main .section-c .content-c .teams-list .team-a .img img{
+main .section-c .content-c .teams-list .team .img img{
     width: 100%;
     overflow: hidden;
 }
 
-main .section-c .content-c .teams-list .team-a .content{
-    position: relative;
-    padding: 20px;
+main .section-c .content-c .teams-list .team .content{
+    padding: 15px;
+}
+
+main .section-c .content-c .teams-list .team .content p{
+    color: rgb(109, 109, 109);
     text-align: right;
+    transform: skew(5deg);
 }
 
-main .section-c .content-c .teams-list .team-a .content i{
+main .section-c .content-c .teams-list .team .content .content-btns{
+    width: 100%;
     display: flex;
-    position: absolute;
 }
 
-main .section-c .content-c .teams-list .team-a .content h4{
-    color: #000;
-    padding: 5px 0 5px 0;
-}
-
-main .section-c .content-c .teams-list .team-a .content button{
+main .section-c .content-c .teams-list .team .content .content-btns button{
     padding: 8px;
     border: 2px solid #D60404;
     cursor: pointer;
     background: transparent;
     outline: none;
+    width: 50%;
     color: #D60404;
+    margin: 5px 2px auto;
 }
 
-main .section-c .content-c .teams-list .team-a .content #highlight{
+main .section-c .content-c .teams-list .team .content #highlight{
     padding: 8px;
     background: #D60404;
     outline: none;
+    width: 50%;
     color: #fff;
-}
-
-main .section-c .content-c .teams-list .team-b{
-    background: #EBEBE8;
-    height: 100%;
-    color: #D60404;
-    display: block;
-    overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-main .section-c .content-c .teams-list .team-b .img{
-    width: 120%;
-    transform: skewY(-5deg);
-    margin-top: -20px;
-    overflow: hidden;
-}
-
-main .section-c .content-c .teams-list .team-b .img img{
-    width: 100%;
-    overflow: hidden;
-}
-
-main .section-c .content-c .teams-list .team-b .content{
-    position: relative;
-    padding: 20px;
-    text-align: right;
-}
-
-main .section-c .content-c .teams-list .team-b .content i{
-    display: flex;
-    position: absolute;
-}
-
-main .section-c .content-c .teams-list .team-b .content h4{
-    color: #000;
-    padding: 5px 0 5px 0;
-}
-
-main .section-c .content-c .teams-list .team-b .content button{
-    padding: 8px;
-    border: 2px solid #D60404;
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    color: #D60404;
-}
-
-main .section-c .content-c .teams-list .team-b .content #highlight{
-    padding: 8px;
-    background: #D60404;
-    outline: none;
-    color: #fff;
-}
-
-main .section-c .content-c .teams-list .team-c{
-    background: #EBEBE8;
-    height: 100%;
-    color: #D60404;
-    display: block;
-    overflow: hidden;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-main .section-c .content-c .teams-list .team-c .img{
-    width: 120%;
-    transform: skewY(-5deg);
-    margin-top: -20px;
-    overflow: hidden;
-}
-
-main .section-c .content-c .teams-list .team-c .img img{
-    width: 100%;
-    overflow: hidden;
-}
-
-main .section-c .content-c .teams-list .team-c .content{
-    position: relative;
-    padding: 20px;
-    text-align: right;
-}
-
-main .section-c .content-c .teams-list .team-c .content i{
-    display: flex;
-    position: absolute;
-}
-
-main .section-c .content-c .teams-list .team-c .content h4{
-    color: #000;
-    padding: 5px 0 5px 0;
-}
-
-main .section-c .content-c .teams-list .team-c .content button{
-    padding: 8px;
-    border: 2px solid #D60404;
-    cursor: pointer;
-    background: transparent;
-    outline: none;
-    color: #D60404;
-}
-
-main .section-c .content-c .teams-list .team-c .content #highlight{
-    padding: 8px;
-    background: #D60404;
-    outline: none;
-    color: #fff;
+    margin: 5px 2px auto;
 }
 
 /*main section d / event section*/
 
 main .section-d{
-    height: 110vh;
+    height: 120vh;
 }
 
 main .section-d .content-d{
-    width: 80%;
+    width: 70%;
     margin: auto;
+    padding: 30px 0;
 }
 
 main .section-d .content-d h1{
-    color: #000;
     font-size: 30px;
     text-align: center;
     padding: 10px;
     letter-spacing: 20px;
 }
+
+main .section-d .content-d h1 span{
+    color: #D60404;
+}
+
 
 main .section-d .content-d .events-list{
     width: 80%;
@@ -437,6 +401,16 @@ main .section-d .content-d .events-list .event #date{
 main .section-d .content-d .events-list .event #description{
     width: 75%;
     padding: 10px;
+}
+
+main .section-d .content-d .events-list button{
+    background: #D60404;
+    color: #fff;
+    float: right;
+    padding: 8px 10px 8px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /*main section e / about section*/
