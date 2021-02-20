@@ -29,6 +29,11 @@ header nav h1 a{
     color: #fff;
 }
 
+header nav h1 i{
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
 header nav ul{
     display: flex;
 }
@@ -53,6 +58,7 @@ header nav #special{
     color: #D60404;
     outline: none;
     cursor: pointer;
+    vertical-align: middle;
 }
 
 header nav #special:hover{
@@ -120,19 +126,6 @@ main{
     background: #f3f3f3;
 }
 
-main .sponsor{
-    width: 80%;
-    height: 10vh;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-main .sponsor .sponsor-list{
-    text-align: center;
-    padding: 10px;
-}
-
 main .section-b{
     width: 80%;
     height: 100vh;
@@ -169,7 +162,6 @@ main .section-b .content-b .gameplay-list .gl-a{
 }
 
 main .section-b .content-b .gameplay-list .gl-a .gl-l{
-    background: blue;
     width: 50%;
 }
 
@@ -299,8 +291,7 @@ main .section-c .content-c .teams-list .team{
 main .section-c .content-c .teams-list .team h4{
     color: #000;
     font-size: 20px;
-    padding: 15px;
-    text-align: center;
+    text-align: right;
     transform: skew(5deg);
 }
 
@@ -310,7 +301,6 @@ main .section-c .content-c .teams-list .team span{
 
 main .section-c .content-c .teams-list .team .img{
     width: 120%;
-    transform: skewY(-5deg);
     overflow: hidden;
 }
 
@@ -324,7 +314,7 @@ main .section-c .content-c .teams-list .team .content{
 }
 
 main .section-c .content-c .teams-list .team .content p{
-    color: rgb(109, 109, 109);
+    color: rgb(136, 136, 136);
     text-align: right;
     transform: skew(5deg);
 }
@@ -357,7 +347,7 @@ main .section-c .content-c .teams-list .team .content #highlight{
 /*main section d / event section*/
 
 main .section-d{
-    height: 120vh;
+    height: 125vh;
 }
 
 main .section-d .content-d{
@@ -377,30 +367,34 @@ main .section-d .content-d h1 span{
     color: #D60404;
 }
 
-
 main .section-d .content-d .events-list{
     width: 80%;
-    padding: 10px;
     display: block;
     margin: auto;
 }
 
 main .section-d .content-d .events-list .event{
     background: #EBEBE8;
-    border-left: 4px solid #D60404;
     margin: 10px 0 10px 0;
     display: flex;
     line-height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 main .section-d .content-d .events-list .event #date{
-    padding: 10px;
+    background: #D60404;
+    color: #fff;
+    padding: 20px;
     width: 25%;
 }
 
 main .section-d .content-d .events-list .event #description{
     width: 75%;
-    padding: 10px;
+    padding: 20px;
+}
+
+main .section-d .content-d .events-list .event #description span{
+    color: #D60404;
 }
 
 main .section-d .content-d .events-list button{
@@ -411,50 +405,71 @@ main .section-d .content-d .events-list button{
     border: none;
     outline: none;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 /*main section e / about section*/
 
 main .section-e{
-    height: 50vh;
-    overflow: hidden;
+    height: 75vh;
     background: #EBEBE8;
 }
 
 main .section-e .content-e{
     width: 80%;
     margin: auto;
+    padding: 30px 0;
 }
 
 main .section-e .content-e h1{
-    color: #000;
     font-size: 30px;
     text-align: center;
     padding: 10px;
     letter-spacing: 20px;
 }
 
-main .section-e .content-e .about-us{
+main .section-e .content-e h1 span{
+    color: #D60404;
+}
+
+main .section-e .content-e .about-list{
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+main .section-e .content-e .about-list .about-us{
     display: flex;
 }
 
-main .section-e .content-e .about-us .logo{
-    padding: 10px;
+main .section-e .content-e .about-list .logo{
+    width: 50%;
+    float: left;
 }
 
-main .section-e .content-e .about-us .logo img{
-    width: 150%;
-    margin-top: -225px;
-    opacity: .2;
+main .section-e .content-e .about-list .logo img{
+    width: 100%;
+    
 }
 
-main .section-e .content-e .about-us .context{
-    padding: 10px;
+main .section-e .content-e .about-list .about-us .context{
+    padding: 25px;
 }
 
-main .section-e .content-e .about-us .context p{
+main .section-e .content-e .about-list .about-us .context p{
     text-indent: 40px;
 }
+
+main .section-e .content-e .about-list .sponsor-list{
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .section-e .content-e .about-list .sponsor-list .sponsors{
+    color: rgb(207, 207, 207);
+    text-align: center;
+}
+
 
 /*main section f / contact section*/
 
@@ -465,14 +480,18 @@ main .section-f{
 main .section-f .content-f{
     width: 80%;
     margin: auto;
+    padding: 30px 0;
 }
 
 main .section-f .content-f h1{
-    color: #000;
     font-size: 30px;
     text-align: center;
     padding: 10px;
     letter-spacing: 20px;
+}
+
+main .section-f .content-f h1 span{
+    color: #D60404;
 }
 
 main .section-f .content-f .contact{
@@ -500,7 +519,7 @@ main .section-f .content-f button{
     cursor: pointer;
     border: none;
     margin-top: 10px;
-    padding: 10px;
+    padding: 8px;
 }
 
 
@@ -511,7 +530,6 @@ main .section-f .content-f .contact #a{
     display: block;
     outline: none;
 }
-
 
 main .section-f .content-f .contact #b{
     font-size: 15px;
